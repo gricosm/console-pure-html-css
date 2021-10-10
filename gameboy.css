@@ -1,15 +1,30 @@
+body{
+    width: 90vw;
+    margin: auto;
+}
+
 h1 {
-    font-size: 50px;
+    font-size: 75px;
+    font-family: monospace;
+    font-weight: bolder;
+    text-align: center;
+}
+
+section{
+    display: block;
+    width: 75vw;
+    margin: auto;
 }
 
 .console-body{
     position: relative;
     width: 500px;
     height: 840px;
-    display: blok;
+    display: block;
     background: rgb(218, 204, 191);
     border-radius: 12.5px 12.5px 75px 12.5px;
     box-shadow: 3px 5px;
+    margin: auto;
 }
 
 .screen-protector {
@@ -34,21 +49,24 @@ h1 {
     background: rgb(158,162,62);
 }
 
-.controls {
-    display: block;
+.controles {
+    display: flex;
     position: relative;
-    margin-top: 250px;
+    margin-top: 125px;
+    align-items: center;
+    justify-content: center;    
 }
 
 .cruceta {
     position: relative;
     width: 150px;
     height: 150px;
+    left: -125px;
 }
 
 .cruceta div {
     position: absolute;
-    background: grey;
+    background: rgb(46, 46, 46);
 }
 .cruceta-vertical {
     left: 50px;
@@ -65,6 +83,63 @@ h1 {
 .botonera {
     position: absolute;
     width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    height: 90px;
+    border-radius: 50px;
+    background: rgb(131, 131, 131);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    -webkit-transform: rotate(-25deg);
+    left: 270px;
+}
+
+.botonA {
+    width: 75px;
+    height: 75px;
+    background: rgb(128, 0, 128);
+    border-radius: 100%;
+    box-shadow: inset 5px 5px rgb(206, 0, 206);
+}
+
+.botonB {
+    width: 75px;
+    height: 75px;
+    background: purple;
+    border-radius: 100%;
+    box-shadow: inset 5px 5px rgb(206, 0, 206);
+}
+
+.controles-2 {
+    display: flex;
+    position: relative;
+    margin-top: 95px;
+    justify-content: center;
+}
+
+.controlStart{
+    width: 90px;
+    height: 20px;
+    border-radius: 20px;
+    background:rgb(46, 46, 46);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(131, 131, 131);
+    -webkit-transform: rotate(-38deg);
+}
+
+.controlSelect{
+    width: 90px;
+    height: 20px;
+    border-radius: 20px;
+    background:rgb(46, 46, 46);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(131, 131, 131);
+    -webkit-transform: rotate(-38deg);
+}
+
+footer{
+    height: auto;
+    max-width: 100%;
+    margin: auto;
 }
